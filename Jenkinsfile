@@ -19,7 +19,7 @@ pipeline {
         // This is a stage.
 	stage('Build') {
 		steps {
-			// Get SHA1 of current commit
+		// Get SHA1 of current commit
 			script {
 				commit_id = sh(script: "git rev-parse --short HEAD", returnStdout: true).trim()
 			}
